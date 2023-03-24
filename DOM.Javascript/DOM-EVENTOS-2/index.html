@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Eventos</title>
+  </head>
+
+  <body>
+    <h1>Eventos de usuario</h1>
+    <!-- Método 1: Insertar el evento en el propio HTML. No recomendado en JS Vanilla. Llenaríamos la página de eventos en un momento. Farragoso. Ilegible -->
+    <button id="boton1" onclick='alert("¡¡Pulsado!!")'>Prueba uno</button>
+    <!-- Método 2: Crear el botón, pero el evento lo añadimos al documento en JS -->
+    <button id="boton2">Prueba dos</button>
+    <button id="boton3">Prueba tres</button>
+    <div class="container">
+      <div id="uno">
+        <p>Haz click sin soltar el botón. Luego suéltalo.</p>
+      </div>
+      <div id="dos">
+        <p>Sobre mí, NO</p>
+      </div>
+    </div>
+    <br />
+    <form
+      action="http://www.davila.com/api/busca"
+      method="POST"
+      class="formulario"
+      id="formulario"
+    >
+      <label for="nombre">Escriba su nombre</label>
+      <input type="text" name="nombre" id="nombre" />
+      <p></p>
+      <label for="nombre">Escriba una contraseña</label>
+      <input type="password" name="password" id="password" />
+      <p></p>
+      <label for="submit">Enviar</label>
+      <input type="submit" name="submit" id="submit" />
+    </form>
+    <script src="app2.js"></script>
+    <!-- <script src='app2.js'></script> -->
+  </body>
+</html>
